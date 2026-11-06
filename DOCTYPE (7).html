@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#213e35">
+<title>Lesson 8 · Pronouns — Sindarin Hub</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--paper:#f5f2e9;--ink:#263b34;--muted:#667269;--green:#213e35;--gold:#92703b;--line:#d8dbcf;--display:'Cormorant Garamond',Georgia,serif;--body:'DM Sans',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.8 var(--body)}a{color:inherit;text-underline-offset:4px}button,input{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:4px}::selection{background:#ded6b5}
+header{max-width:1360px;margin:auto;padding:28px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:25px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:2.5px;font-weight:600}.brand svg{width:31px;height:42px}nav{display:flex;gap:23px}nav a{text-decoration:none;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}nav a:hover,nav .active{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:10px}.button{background:transparent;border:1px solid var(--line);padding:9px 15px;font-size:11px;color:var(--ink);transition:.2s}.button:hover{background:var(--green);color:var(--paper);border-color:var(--green)}button:active{transform:scale(.97)}
+.hero{max-width:1360px;margin:auto;display:grid;grid-template-columns:1.6fr 1fr;padding:65px 8% 60px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:2.3px;color:var(--gold);font-weight:600}.hero h1{font:400 clamp(65px,8vw,105px)/1 var(--display);letter-spacing:-3px;margin:20px 0}.hero h1 span{display:block;font-size:.48em;font-style:italic;letter-spacing:-1px;margin-top:12px}.hero p{max-width:445px;color:var(--muted)}.meta{display:flex;gap:20px;margin-top:26px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}.meta span+span{border-left:1px solid var(--line);padding-left:20px}.art{display:flex;align-items:center;justify-content:center;position:relative}.art svg{width:310px;max-width:100%}.art-label{position:absolute;bottom:0;font:italic 19px var(--display);color:var(--muted)}.banner{background:var(--green);color:#e4e8db;padding:17px 8%;display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.5px}.banner span:first-child{color:#d4bb86}
+.layout{max-width:1180px;margin:auto;padding:65px 35px 80px;display:grid;grid-template-columns:220px 1fr;gap:70px}.sidebar{position:sticky;top:30px;align-self:start}.sidebar h2{font:600 10px var(--body);letter-spacing:2px;margin:0 0 20px;color:var(--muted)}.sidebar ol{padding:0;list-style:none;margin:0}.sidebar a{display:flex;gap:13px;text-decoration:none;font-size:12px;padding:9px 0 9px 14px;color:var(--muted);border-left:2px solid transparent}.sidebar a span{font-size:10px;color:var(--gold)}.sidebar a:hover,.sidebar a.current{border-color:var(--gold);color:var(--green);background:#e9eadf}.note{margin-top:30px;border-top:1px solid var(--line);padding-top:20px;font:22px/1.4 var(--display);color:var(--muted)}
+section{margin-bottom:52px}.heading{display:flex;align-items:center;gap:16px;margin-bottom:20px}.number{font:21px var(--display);color:var(--gold)}h2{font:500 38px/1.2 var(--display);margin:0}h3{font:600 27px var(--display);margin:26px 0 12px}p{margin:0 0 18px}.intro{color:var(--muted)}.aside-note{padding:18px 22px;border-left:2px solid var(--gold);background:#eaece1;font-size:13px;margin:24px 0}.elvish{font:500 25px/1.4 var(--display)}.meaning{font-size:12px;color:var(--muted)}.word-list{border-top:1px solid var(--line);margin:24px 0}.word{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}.word small{display:block;font:11px/1.6 var(--body);color:var(--muted);margin-top:5px}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:24px 0;font-size:13px;min-width:540px}th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:500}th,td{padding:15px 12px;border-bottom:1px solid var(--line);vertical-align:top}th:first-child,td:first-child{padding-left:0}td.pronoun{font:28px var(--display);color:var(--green)}td.description{font-size:12px;color:var(--muted)}
+blockquote{margin:28px 0;padding:12px 0 12px 25px;border-left:1px solid var(--gold);font:31px/1.35 var(--display)}blockquote cite{display:block;font:11px/1.8 var(--body);color:var(--muted);margin-top:12px}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;margin:25px 0}.label{font-size:9px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);display:block;margin-bottom:10px}.comparison p{margin:0}.translation{display:block;font:12px/1.8 var(--body);color:var(--muted);margin-top:6px}
+.quiz-row{display:grid;grid-template-columns:1fr 140px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.quiz-row label{font:25px var(--display)}.quiz-row label small{display:block;font:11px var(--body);color:var(--muted)}input{width:100%;background:transparent;color:var(--ink);border:1px solid #a9b3a3;padding:9px 12px;border-radius:0}input.correct{border-color:#40764f;background:#e1eadb}input.incorrect{border-color:#a74d36;background:#f3e3da}.quiz-actions{display:flex;gap:12px;align-items:center;margin:25px 0;flex-wrap:wrap}.primary{background:var(--green);color:var(--paper);border-color:var(--green)}.primary:hover{background:#35594b}.result{font-size:12px;color:var(--muted)}.answers{font-size:13px;border-left:2px solid var(--gold);padding:15px 20px;background:#eaece1}.answers[hidden]{display:none}
+.ending{border-top:1px solid var(--line);padding:25px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}.ending p{margin:0;font:25px var(--display)}.ending a{font-size:10px;text-transform:uppercase;letter-spacing:1px;text-decoration:none;border-bottom:1px solid var(--gold)}footer{background:var(--green);padding:35px 8%;color:#c8d2c5;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:11px}.footer-brand{font:25px var(--display);color:var(--paper)}.reveal{animation:rise .7s both}.hero{animation-delay:.1s}.layout{animation-delay:.25s}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:12px 22px;background:var(--green);color:white;border:1px solid #8c9b83;font-size:12px;z-index:10}.toast[hidden]{display:none}
+@media(max-width:950px){header{flex-wrap:wrap}nav{order:3;width:100%;justify-content:space-between}.hero{padding:45px 6%}.layout{grid-template-columns:170px 1fr;gap:30px;padding:45px 5%}}
+@media(max-width:600px){header{padding:20px 6%}.brand{font-size:12px;letter-spacing:1.5px}.button{font-size:10px;padding:8px 10px}nav{overflow:auto;gap:20px}nav a{font-size:9px}.hero{display:block;padding:40px 6%}.hero h1{font-size:70px}.art{display:none}.banner{font-size:10px;padding:15px 6%;flex-direction:column;gap:3px}.layout{display:block;padding:30px 6%}.sidebar{position:static;margin-bottom:35px;border-bottom:1px solid var(--line);padding-bottom:20px}.sidebar ol{display:flex;overflow:auto;gap:16px}.sidebar li{flex:0 0 auto}.sidebar a{padding:6px 0;border-left:0;border-bottom:2px solid transparent}.sidebar a.current{border-bottom-color:var(--gold);background:none}.sidebar h2{margin-bottom:10px}.note{display:none}h2{font-size:32px}.word{gap:15px}.elvish{font-size:24px}.comparison{gap:18px}.quiz-row{grid-template-columns:1fr 110px}.quiz-row label{font-size:22px}footer{flex-direction:column;align-items:flex-start}.ending p{font-size:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}*{transition:none!important}}
+@media print{nav,.download,.sidebar,.art,.banner,.ending,.toast,.quiz-actions{display:none}.layout{display:block;padding:20px}.hero{padding:20px}.hero h1{font-size:50px}body{background:white}.word,tr{break-inside:avoid}footer{background:none;color:var(--ink)}}
+</style>
+</head>
+<body id="top">
+<header>
+<a class="brand" href="#top" aria-label="Sindarin Hub home">
+<svg viewBox="0 0 35 48" fill="none" aria-hidden="true"><path d="M17.5 44V6M17.5 30C3 28 2 14 4 6c9 3 14 9 13.5 24Zm0-10C30 18 32 8 30 2c-8 2-12 9-12.5 18Zm0 20C27 38 32 30 31 23c-8 1-12 7-13.5 17Z" stroke="currentColor" stroke-width="1.2"/></svg>
+SINDARIN HUB
+</a>
+<nav aria-label="Main navigation"><a href="https://sindarinlessons.weebly.com/">Home</a><a href="#indefinite">Words</a><a href="#nominative">Pronouns</a><a href="#questions">Phrases</a><a class="active" href="#top">Lessons</a><a href="#sources">Resources</a></nav>
+<button class="button download" id="download" type="button">↓ Download HTML</button>
+</header>
+<main>
+<div class="hero reveal">
+<div>
+<div class="eyebrow">The language of the Grey Elves</div>
+<h1>Pronouns<span>Nominative & beyond</span></h1>
+<p>I, you, and someone else. Discover the small words that identify people and things—and the extra emphasis that makes an introduction your own.</p>
+<div class="meta"><span>Lesson 08</span><span>Sentence foundations</span><span>Practice included</span></div>
+</div>
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 320 320" fill="none">
+<circle cx="160" cy="150" r="124" stroke="#b9bea8" stroke-width=".7"/><circle cx="160" cy="150" r="112" stroke="#b9bea8" stroke-width=".5" stroke-dasharray="2 8"/>
+<path d="M160 234V70m0 53c-26-5-39-26-35-49 24 7 36 27 35 49Zm0 52c30-6 45-31 40-57-28 9-41 32-40 57Zm0 48c-33-7-49-33-44-59 29 9 43 34 44 59Z" stroke="#71836a" stroke-width="1.2"/>
+<circle cx="91" cy="169" r="19" stroke="#a7af94"/><circle cx="229" cy="169" r="19" stroke="#a7af94"/>
+<path d="M67 226c0-24 11-38 24-38s24 14 24 38m90 0c0-24 11-38 24-38s24 14 24 38M71 246h178" stroke="#a7af94"/>
+<path d="m155 24 5-8 5 8-5 8-5-8Z" fill="#92703b"/>
+</svg>
+<span class="art-label">I, you, and the world between</span>
+</div>
+</div>
+<div class="banner"><span>08 / THE WORDS THAT STAND FOR US</span><span>Indefinite · Nominative · Emphatic · Reflexive</span></div>
+<div class="layout reveal">
+<aside class="sidebar">
+<h2>IN THIS LESSON</h2>
+<ol>
+<li><a href="#indefinite" class="current"><span>01</span>Indefinite pronouns</a></li>
+<li><a href="#nominative"><span>02</span>Nominative pronouns</a></li>
+<li><a href="#emphatic"><span>03</span>Emphatic & reflexive</a></li>
+<li><a href="#questions"><span>04</span>Asking questions</a></li>
+<li><a href="#practice"><span>05</span>Test your knowledge</a></li>
+</ol>
+<div class="note">“A small word.<br>A sense of who we are.”</div>
+</aside>
+<article aria-label="Lesson 8: Pronouns">
+<p class="intro">This lesson introduces indefinite pronouns such as “someone,” nominative forms used in statements such as “I am,” and emphatic or reflexive forms that can express “I myself” or “yourself.”</p>
+
+<section id="indefinite">
+<div class="heading"><span class="number">01</span><h2>Indefinite pronouns</h2></div>
+<p class="intro">Use these words when the person, thing, or place is unspecified.</p>
+<div class="word-list">
+<div class="word"><span class="elvish">Nad</span><span class="meaning">Something</span></div>
+<div class="word"><span class="elvish">Únad / Alnad</span><span class="meaning">Nothing</span></div>
+<div class="word"><span class="elvish">Pen</span><span class="meaning">Someone / somebody</span></div>
+<div class="word"><span class="elvish">Úben / Alphen</span><span class="meaning">No one / nobody</span></div>
+<div class="word"><span class="elvish">Sad</span><span class="meaning">Somewhere</span></div>
+<div class="word"><span class="elvish">Úhad / Alhad</span><span class="meaning">Nowhere</span></div>
+</div>
+</section>
+
+<section id="nominative">
+<div class="heading"><span class="number">02</span><h2>Nominative pronouns</h2></div>
+<p>In the source lesson’s examples, a nominative pronoun followed by a description forms a statement such as “I am old.” No separate word for “am,” “is,” or “are” appears.</p>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Singular meaning</th><th scope="col">Form</th><th scope="col">Plural meaning</th><th scope="col">Form</th></tr></thead>
+<tbody>
+<tr><td class="description">I am</td><td class="pronoun">ni</td><td class="description">We are</td><td class="pronoun">me</td></tr>
+<tr><td class="description">You are — formal</td><td class="pronoun">le</td><td class="description">You all are — formal</td><td class="pronoun">de</td></tr>
+<tr><td class="description">You are — informal</td><td class="pronoun">ci</td><td class="description">You all are — informal</td><td class="pronoun">ci</td></tr>
+<tr><td class="description">He / she / it is; singular they are</td><td class="pronoun">te</td><td class="description">They all are</td><td class="pronoun">ti</td></tr>
+<tr><td class="description">This is</td><td class="pronoun">se</td><td class="description">These are</td><td class="pronoun">si</td></tr>
+<tr><td class="description">That is</td><td class="pronoun">sa</td><td class="description">Those are</td><td class="pronoun">sai</td></tr>
+</tbody></table></div>
+<div class="aside-note"><strong>Important:</strong> the source states that the word immediately following a nominative or emphatic pronoun <strong>does not mutate</strong>.</div>
+<h3>Examples</h3>
+<div class="word-list">
+<div class="word"><span class="elvish">Ni brûn</span><span class="meaning">I am old.</span></div>
+<div class="word"><span class="elvish">Le laich</span><span class="meaning">You are sweet.</span></div>
+<div class="word"><span class="elvish">Te ithron</span><span class="meaning">He is a wizard.</span></div>
+<div class="word"><span class="elvish">Sai yrn</span><span class="meaning">Those are trees.</span></div>
+</div>
+</section>
+
+<section id="emphatic">
+<div class="heading"><span class="number">03</span><h2>Emphatic & reflexive</h2></div>
+<p class="intro">These forms can add emphasis to the person being identified or express a reflexive meaning such as “yourself.”</p>
+<div class="word-list">
+<div class="word"><span class="elvish">Im</span><span class="meaning">I myself; myself / ourselves<small>The source uses the same form for singular and plural.</small></span></div>
+<div class="word"><span class="elvish">Ech</span><span class="meaning">You yourself; yourself / yourselves</span></div>
+<div class="word"><span class="elvish">E / Est</span><span class="meaning">He / she / it; himself / herself / itself<small>The source states that singular and plural share the same forms.</small></span></div>
+</div>
+<div class="aside-note"><strong>E or Est?</strong> The lesson presents both as options, not as forms chosen according to whether the following word begins with a vowel.</div>
+<h3>More than a simple introduction</h3>
+<div class="comparison">
+<div><span class="label">Nominative</span><p class="elvish">Ni Boromir<span class="translation">I am Boromir.</span></p></div>
+<div><span class="label">Emphatic</span><p class="elvish">Im Boromir<span class="translation">I, myself, am Boromir.</span></p></div>
+</div>
+<p>The emphatic form adds an extra sense of personal importance. The source illustrates this with the inscription on the doors of Moria:</p>
+<blockquote>Im Narvi, hain echant<cite>“I, Narvi, made them.” — The Lord of the Rings</cite></blockquote>
+<p>The emphasis is not simply “I made them,” but “I, <strong>myself</strong>, made them.” You can also use an emphatic form to introduce someone else:</p>
+<div class="word-list">
+<div class="word"><span class="elvish">E / Est Gandalf, i ithron vith</span><span class="meaning">He is Gandalf, the grey wizard.</span></div>
+</div>
+</section>
+
+<section id="questions">
+<div class="heading"><span class="number">04</span><h2>Asking questions</h2></div>
+<p>To turn these statements into questions, add a question mark when writing and speak the sentence as a question. The pronoun remains the same.</p>
+<div class="comparison">
+<div><span class="label">Statement</span><p class="elvish">Ni brûn<span class="translation">I am old.</span></p></div>
+<div><span class="label">Question</span><p class="elvish">Ni brûn?<span class="translation">Am I old?</span></p></div>
+</div>
+<div class="word-list">
+<div class="word"><span class="elvish">Te ithron?</span><span class="meaning">Is he a wizard?</span></div>
+<div class="word"><span class="elvish">Sai yrn?</span><span class="meaning">Are those trees?</span></div>
+</div>
+<div class="aside-note"><strong>Keep the sentence intact.</strong> In these examples, you do not reverse the order of the words as English does with “I am” → “Am I?”</div>
+</section>
+
+<section id="practice">
+<div class="heading"><span class="number">05</span><h2>Test your knowledge</h2></div>
+<p class="intro">An added exercise based on this lesson. Enter the matching Sindarin word. Capitalisation does not matter; for “nothing,” either listed form is accepted.</p>
+<form id="quiz">
+<div class="quiz-row"><label for="q1">I am<small>Nominative</small></label><input id="q1" autocomplete="off" spellcheck="false" data-answer="ni" aria-label="Sindarin nominative for I am"></div>
+<div class="quiz-row"><label for="q2">We are<small>Nominative</small></label><input id="q2" autocomplete="off" spellcheck="false" data-answer="me" aria-label="Sindarin nominative for We are"></div>
+<div class="quiz-row"><label for="q3">You are<small>Formal, singular</small></label><input id="q3" autocomplete="off" spellcheck="false" data-answer="le" aria-label="Formal singular You are"></div>
+<div class="quiz-row"><label for="q4">Those are<small>Nominative</small></label><input id="q4" autocomplete="off" spellcheck="false" data-answer="sai" aria-label="Sindarin for Those are"></div>
+<div class="quiz-row"><label for="q5">Someone<small>Indefinite</small></label><input id="q5" autocomplete="off" spellcheck="false" data-answer="pen" aria-label="Sindarin for Someone"></div>
+<div class="quiz-row"><label for="q6">Nothing<small>Either form</small></label><input id="q6" autocomplete="off" spellcheck="false" data-answer="únad|alnad" aria-label="Sindarin for Nothing"></div>
+<div class="quiz-row"><label for="q7">Yourself<small>Emphatic / reflexive</small></label><input id="q7" autocomplete="off" spellcheck="false" data-answer="ech" aria-label="Sindarin for Yourself"></div>
+<div class="quiz-actions"><button class="button primary" type="submit">Check answers</button><button class="button" id="show-answers" type="button" aria-expanded="false" aria-controls="answers">Show answers</button><button class="button" type="reset">Reset</button></div>
+<p class="result" id="result" role="status"></p>
+<div class="answers" id="answers" hidden>I am → Ni · We are → Me · You are (formal) → Le · Those are → Sai · Someone → Pen · Nothing → Únad / Alnad · Yourself → Ech</div>
+</form>
+</section>
+
+<section id="sources">
+<div class="heading"><h2>Continue your study</h2></div>
+<p class="intro">Adapted from Sindarin Hub’s “Lesson 8 — Pronouns (nominative).” Forms and explanations follow the supplied page. Other Sindarin resources may use different reconstructions or grammatical interpretations.</p>
+<p><a href="https://sindarinlessons.weebly.com/8---pronouns-nominative.html" target="_blank" rel="noopener noreferrer">Read the original lesson ↗</a></p>
+<p><a href="https://sindarinlessons.weebly.com/7---plurals-2.html" target="_blank" rel="noopener noreferrer">Revisit Lesson 7: Plurals, part two ↗</a></p>
+</section>
+<div class="ending"><p>Find the words to speak for yourself.</p><a href="#top">Back to the beginning ↑</a></div>
+</article>
+</div>
+</main>
+<footer><span class="footer-brand">Sindarin Hub</span><span>A study companion for the language of the Grey Elves.</span><a href="#sources">Source & further reading</a></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+const quiz=document.getElementById('quiz');
+const result=document.getElementById('result');
+const answers=document.getElementById('answers');
+const answerButton=document.getElementById('show-answers');
+quiz.addEventListener('submit',event=>{
+event.preventDefault();
+let correct=0;
+const inputs=quiz.querySelectorAll('input');
+inputs.forEach(input=>{
+const value=input.value.trim().normalize('NFC').toLowerCase();
+const valid=input.dataset.answer.split('|').includes(value);
+input.classList.toggle('correct',valid);
+input.classList.toggle('incorrect',!valid);
+input.setAttribute('aria-invalid',String(!valid));
+if(valid)correct++;
+});
+result.textContent=correct+' of '+inputs.length+' correct. '+(correct===inputs.length?'Excellent work!':'Review your answers and try again.');
+});
+answerButton.addEventListener('click',()=>{
+answers.hidden=!answers.hidden;
+answerButton.textContent=answers.hidden?'Show answers':'Hide answers';
+answerButton.setAttribute('aria-expanded',String(!answers.hidden));
+});
+quiz.addEventListener('reset',()=>{
+quiz.querySelectorAll('input').forEach(input=>{
+input.classList.remove('correct','incorrect');input.removeAttribute('aria-invalid');
+});
+result.textContent='';answers.hidden=true;
+answerButton.textContent='Show answers';answerButton.setAttribute('aria-expanded','false');
+});
+let toastTimer;
+document.getElementById('download').addEventListener('click',()=>{
+const clone=document.documentElement.cloneNode(true);
+clone.querySelector('#toast').hidden=true;clone.querySelector('#toast').textContent='';
+clone.querySelectorAll('input').forEach(input=>{
+input.removeAttribute('value');input.classList.remove('correct','incorrect');input.removeAttribute('aria-invalid');
+});
+clone.querySelector('#result').textContent='';clone.querySelector('#answers').hidden=true;
+clone.querySelector('#show-answers').textContent='Show answers';clone.querySelector('#show-answers').setAttribute('aria-expanded','false');
+clone.querySelectorAll('.sidebar a').forEach(a=>{a.classList.remove('current');a.removeAttribute('aria-current');});
+clone.querySelector('.sidebar a').classList.add('current');
+const url=URL.createObjectURL(new Blob(['<!DOCTYPE html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}));
+const link=document.createElement('a');link.href=url;link.download='sindarin-pronouns-nominative.html';
+document.body.appendChild(link);link.click();link.remove();
+setTimeout(()=>URL.revokeObjectURL(url),10000);
+const toast=document.getElementById('toast');toast.textContent='Your HTML download has started.';toast.hidden=false;
+clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.hidden=true,3500);
+});
+if('IntersectionObserver' in window){
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting)document.querySelectorAll('.sidebar a').forEach(a=>{
+const selected=a.getAttribute('href')==='#'+entry.target.id;
+a.classList.toggle('current',selected);
+if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
+});
+});
+},{rootMargin:'-5% 0px -65% 0px',threshold:0});
+document.querySelectorAll('article section[id]:not(#sources)').forEach(section=>observer.observe(section));
+}
+</script>
+</body>
+</html>
