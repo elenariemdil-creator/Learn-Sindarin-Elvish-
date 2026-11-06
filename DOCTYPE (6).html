@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#213e35">
+<title>Lesson 7 · Plurals, Part Two — Sindarin Hub</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--paper:#f5f2e9;--ink:#263b34;--muted:#667269;--green:#213e35;--gold:#92703b;--line:#d8dbcf;--display:'Cormorant Garamond',Georgia,serif;--body:'DM Sans',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.8 var(--body)}a{color:inherit;text-underline-offset:4px}button,input{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:4px}::selection{background:#ded6b5}
+header{max-width:1360px;margin:auto;padding:28px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:25px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:2.5px;font-weight:600}.brand svg{width:31px;height:42px}nav{display:flex;gap:23px}nav a{text-decoration:none;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}nav a:hover,nav .active{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:10px}.button{background:transparent;border:1px solid var(--line);padding:9px 15px;font-size:11px;color:var(--ink);transition:.2s}.button:hover{background:var(--green);color:var(--paper);border-color:var(--green)}button:active{transform:scale(.97)}
+.hero{max-width:1360px;margin:auto;display:grid;grid-template-columns:1.6fr 1fr;padding:65px 8% 60px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:2.3px;color:var(--gold);font-weight:600}.hero h1{font:400 clamp(68px,8vw,108px)/1 var(--display);letter-spacing:-3px;margin:20px 0}.hero h1 span{display:block;font-size:.5em;font-style:italic;letter-spacing:-1px;margin-top:12px}.hero p{max-width:445px;color:var(--muted)}.meta{display:flex;gap:20px;margin-top:26px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}.meta span+span{border-left:1px solid var(--line);padding-left:20px}.art{display:flex;align-items:center;justify-content:center;position:relative}.art svg{width:310px;max-width:100%}.art-label{position:absolute;bottom:0;font:italic 19px var(--display);color:var(--muted)}.banner{background:var(--green);color:#e4e8db;padding:17px 8%;display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.5px}.banner span:first-child{color:#d4bb86}
+.layout{max-width:1180px;margin:auto;padding:65px 35px 80px;display:grid;grid-template-columns:220px 1fr;gap:70px}.sidebar{position:sticky;top:30px;align-self:start}.sidebar h2{font:600 10px var(--body);letter-spacing:2px;margin:0 0 20px;color:var(--muted)}.sidebar ol{padding:0;list-style:none;margin:0}.sidebar a{display:flex;gap:13px;text-decoration:none;font-size:12px;padding:9px 0 9px 14px;color:var(--muted);border-left:2px solid transparent}.sidebar a span{font-size:10px;color:var(--gold)}.sidebar a:hover,.sidebar a.current{border-color:var(--gold);color:var(--green);background:#e9eadf}.note{margin-top:30px;border-top:1px solid var(--line);padding-top:20px;font:22px/1.4 var(--display);color:var(--muted)}
+section{margin-bottom:52px}.heading{display:flex;align-items:center;gap:16px;margin-bottom:20px}.number{font:21px var(--display);color:var(--gold)}h2{font:500 38px/1.2 var(--display);margin:0}h3{font:600 27px var(--display);margin:26px 0 12px}p{margin:0 0 18px}.intro{color:var(--muted)}.aside-note{padding:18px 22px;border-left:2px solid var(--gold);background:#eaece1;font-size:13px;margin:24px 0}.elvish{font:500 25px/1.4 var(--display)}.meaning{font-size:12px;color:var(--muted)}.word-list{border-top:1px solid var(--line);margin:24px 0}.word{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);align-items:baseline}.word small{display:block;font:11px/1.6 var(--body);color:var(--muted);margin-top:5px}.arrow{color:var(--gold);padding:0 8px}
+.tools{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:25px 0 15px}.tools h3{margin:0}.conversation{border-top:1px solid var(--line)}.speech{display:grid;grid-template-columns:80px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}.speaker{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);padding-top:6px}.speech p{margin:0}.translation{display:block;font:12px/1.8 var(--body);color:var(--muted);margin-top:6px}.hide-translations .translation{display:none}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:24px 0;font-size:13px;min-width:440px}th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:500}th,td{padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top}th:first-child,td:first-child{padding-left:0}td{font:23px var(--display)}td small{font:11px/1.6 var(--body);color:var(--muted)}.irregular td:last-child{font:12px/1.8 var(--body);color:var(--muted)}
+.quiz-row{display:grid;grid-template-columns:1fr 140px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.quiz-row label{font:25px var(--display)}.quiz-row label small{display:block;font:11px var(--body);color:var(--muted)}input{width:100%;background:transparent;color:var(--ink);border:1px solid #a9b3a3;padding:9px 12px;border-radius:0}input.correct{border-color:#40764f;background:#e1eadb}input.incorrect{border-color:#a74d36;background:#f3e3da}.quiz-actions{display:flex;gap:12px;align-items:center;margin:25px 0;flex-wrap:wrap}.primary{background:var(--green);color:var(--paper);border-color:var(--green)}.primary:hover{background:#35594b}.result{font-size:12px;color:var(--muted)}.answers{font-size:13px;border-left:2px solid var(--gold);padding:15px 20px;background:#eaece1}.answers[hidden]{display:none}
+.ending{border-top:1px solid var(--line);padding:25px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}.ending p{margin:0;font:25px var(--display)}.ending a{font-size:10px;text-transform:uppercase;letter-spacing:1px;text-decoration:none;border-bottom:1px solid var(--gold)}footer{background:var(--green);padding:35px 8%;color:#c8d2c5;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:11px}.footer-brand{font:25px var(--display);color:var(--paper)}.reveal{animation:rise .7s both}.hero{animation-delay:.1s}.layout{animation-delay:.25s}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:12px 22px;background:var(--green);color:white;border:1px solid #8c9b83;font-size:12px;z-index:10}.toast[hidden]{display:none}
+@media(max-width:950px){header{flex-wrap:wrap}nav{order:3;width:100%;justify-content:space-between}.hero{padding:45px 6%}.layout{grid-template-columns:170px 1fr;gap:30px;padding:45px 5%}}
+@media(max-width:600px){header{padding:20px 6%}.brand{font-size:12px;letter-spacing:1.5px}.button{font-size:10px;padding:8px 10px}nav{overflow:auto;gap:20px}nav a{font-size:9px}.hero{display:block;padding:40px 6%}.hero h1{font-size:76px}.art{display:none}.banner{font-size:10px;padding:15px 6%;flex-direction:column;gap:3px}.layout{display:block;padding:30px 6%}.sidebar{position:static;margin-bottom:35px;border-bottom:1px solid var(--line);padding-bottom:20px}.sidebar ol{display:flex;overflow:auto;gap:16px}.sidebar li{flex:0 0 auto}.sidebar a{padding:6px 0;border-left:0;border-bottom:2px solid transparent}.sidebar a.current{border-bottom-color:var(--gold);background:none}.sidebar h2{margin-bottom:10px}.note{display:none}h2{font-size:32px}.word{grid-template-columns:1fr;gap:5px}.speech{grid-template-columns:60px 1fr;gap:12px}.elvish{font-size:24px}.quiz-row{grid-template-columns:1fr 120px}footer{flex-direction:column;align-items:flex-start}.ending p{font-size:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}*{transition:none!important}}
+@media print{nav,.download,.sidebar,.art,.banner,.ending,.toast,.tools button,.quiz-actions{display:none}.layout{display:block;padding:20px}.hero{padding:20px}.hero h1{font-size:50px}body{background:white}.word,.speech,tr{break-inside:avoid}.hide-translations .translation{display:block}footer{background:none;color:var(--ink)}}
+</style>
+</head>
+<body id="top">
+<header>
+<a class="brand" href="#top" aria-label="Sindarin Hub home">
+<svg viewBox="0 0 35 48" fill="none" aria-hidden="true"><path d="M17.5 44V6M17.5 30C3 28 2 14 4 6c9 3 14 9 13.5 24Zm0-10C30 18 32 8 30 2c-8 2-12 9-12.5 18Zm0 20C27 38 32 30 31 23c-8 1-12 7-13.5 17Z" stroke="currentColor" stroke-width="1.2"/></svg>
+SINDARIN HUB
+</a>
+<nav aria-label="Main navigation"><a href="https://sindarinlessons.weebly.com/">Home</a><a href="#examples">Words</a><a href="#diphthongs">Rules</a><a href="#dialogue">Phrases</a><a class="active" href="#top">Lessons</a><a href="#sources">Resources</a></nav>
+<button class="button download" id="download" type="button">↓ Download HTML</button>
+</header>
+<main>
+<div class="hero reveal">
+<div>
+<div class="eyebrow">The language of the Grey Elves</div>
+<h1>Plurals<span>Part two</span></h1>
+<p>Some sounds change. Others hold their shape. Explore paired vowels, the special case of AW, and the plurals with stories of their own.</p>
+<div class="meta"><span>Lesson 07</span><span>Noun foundations</span><span>Practice included</span></div>
+</div>
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 320 320" fill="none">
+<circle cx="160" cy="150" r="124" stroke="#b9bea8" stroke-width=".7"/><circle cx="160" cy="150" r="112" stroke="#b9bea8" stroke-width=".5" stroke-dasharray="2 8"/>
+<path d="M113 234V77m94 157V77M113 121c-27-5-40-25-36-48 24 7 37 26 36 48Zm0 48c30-6 44-30 40-55-28 9-40 31-40 55Zm0 45c-30-6-45-29-41-53 27 8 40 29 41 53Zm94-93c27-5 40-25 36-48-24 7-37 26-36 48Zm0 48c-30-6-44-30-40-55 28 9 40 31 40 55Zm0 45c30-6 45-29 41-53-27 8-40 29-41 53Z" stroke="#71836a" stroke-width="1.2"/>
+<path d="M83 246h154M143 230c11-13 23-13 34 0" stroke="#a7af94"/><path d="m155 24 5-8 5 8-5 8-5-8Z" fill="#92703b"/>
+</svg>
+<span class="art-label">Two sounds, one unfolding pattern</span>
+</div>
+</div>
+<div class="banner"><span>07 / THE SHAPE OF MANY, CONTINUED</span><span>Diphthongs · AW · Irregular plurals</span></div>
+<div class="layout reveal">
+<aside class="sidebar">
+<h2>IN THIS LESSON</h2>
+<ol>
+<li><a href="#dialogue" class="current"><span>01</span>Elves & sea-songs</a></li>
+<li><a href="#diphthongs"><span>02</span>Paired vowel changes</a></li>
+<li><a href="#examples"><span>03</span>Examples</a></li>
+<li><a href="#aw"><span>04</span>The special case of AW</a></li>
+<li><a href="#irregular"><span>05</span>Irregular plurals</a></li>
+<li><a href="#practice"><span>06</span>Test your knowledge</a></li>
+</ol>
+<div class="note">“Learn the pattern.<br>Remember the exceptions.”</div>
+</aside>
+<article aria-label="Lesson 7: Plurals, part two">
+<p class="intro">Continue your study of Sindarin plurals with vowel pairs and irregular forms. Read this alongside Lesson 6, which introduces single-vowel changes.</p>
+<div class="aside-note">The original page notes that this lesson is covered in more detail in the <strong>Intermediate Sindarin course</strong>.</div>
+
+<section id="dialogue">
+<div class="heading"><span class="number">01</span><h2>Elves & sea-songs</h2></div>
+<div class="tools"><h3>Beside the fires</h3><button class="button" id="toggle" type="button" aria-controls="conversation" aria-pressed="true">Hide English</button></div>
+<div class="conversation" id="conversation">
+<div class="speech"><span class="speaker">Siron</span><p class="elvish">Man ti?<span class="translation">Who are they?</span></p></div>
+<div class="speech"><span class="speaker">Amdiron</span><p class="elvish">In edhil ennas.<span class="translation">The elves there.</span></p></div>
+<div class="speech"><span class="speaker">Siron</span><p class="elvish">In yn Elrond.<span class="translation">The sons of Elrond.</span></p></div>
+<div class="speech"><span class="speaker">Amdiron</span><p class="elvish">In eneth dîn Elladan a Elrohir.<span class="translation">Their names are Elladan and Elrohir.</span></p></div>
+<div class="speech"><span class="speaker">Siron</span><p class="elvish">I chent dîn laeg!<span class="translation">Their eyes are keen!</span></p></div>
+<div class="speech"><span class="speaker">Amdiron</span><p class="elvish">Navan Ivrinel?<span class="translation">Where is Ivrinel? Literally, “At what place is Ivrinel?”</span></p></div>
+<div class="speech"><span class="speaker">Siron</span><p class="elvish">Ganna aerlinn nef i noer.<span class="translation">She’s harping sea-songs beside the fires.</span></p></div>
+</div>
+<p class="meaning" style="margin-top:15px">The extracted source lists eight speaker labels for seven utterances. This presentation assigns the available lines alternately.</p>
+</section>
+
+<section id="diphthongs">
+<div class="heading"><span class="number">02</span><h2>Paired vowel changes</h2></div>
+<p class="intro">The source groups these vowel pairs together for plural formation. Check whether the pair is in final or non-final position.</p>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Original vowels</th><th scope="col">Non-final position</th><th scope="col">Final position</th></tr></thead>
+<tbody>
+<tr><td>ai</td><td>ai</td><td>ai</td></tr>
+<tr><td>ae</td><td>ae</td><td>ae</td></tr>
+<tr><td>au</td><td>au</td><td>au</td></tr>
+<tr><td>ei</td><td>ei</td><td>i</td></tr>
+<tr><td>ie</td><td><small>Doesn’t exist, as listed in the source</small></td><td>i</td></tr>
+<tr><td>io, iô</td><td>io, iô</td><td>y, ŷ</td></tr>
+<tr><td>oe</td><td>oe</td><td>oe</td></tr>
+<tr><td>ui</td><td>ui</td><td>ui</td></tr>
+</tbody></table></div>
+<div class="aside-note"><strong>Remember vowel position:</strong> “final” refers to the rightmost vowel or vowel pair, not necessarily the last letters of the word.</div>
+</section>
+
+<section id="examples">
+<div class="heading"><span class="number">03</span><h2>Examples</h2></div>
+<h3>Pairs that stay unchanged</h3>
+<div class="word-list">
+<div class="word"><span class="elvish">Aith <span class="arrow">→</span> Aith*</span><span class="meaning">Spearpoint → spearpoints</span></div>
+<div class="word"><span class="elvish">Taith <span class="arrow">→</span> Taith*</span><span class="meaning">Mark → marks</span></div>
+<div class="word"><span class="elvish">Gwaew <span class="arrow">→</span> Gwaew*</span><span class="meaning">Wind → winds</span></div>
+<div class="word"><span class="elvish">Taeg <span class="arrow">→</span> Taeg*</span><span class="meaning">Boundary → boundaries</span></div>
+<div class="word"><span class="elvish">Naug <span class="arrow">→</span> Naug*</span><span class="meaning">Dwarf → dwarves</span></div>
+<div class="word"><span class="elvish">Naur <span class="arrow">→</span> Naur*</span><span class="meaning">Fire → fires</span></div>
+<div class="word"><span class="elvish">Bauglir <span class="arrow">→</span> Bauglir*</span><span class="meaning">Tyrant → tyrants<small>Neither the diphthong nor the single vowel changes.</small></span></div>
+<div class="word"><span class="elvish">Goe <span class="arrow">→</span> Goe*</span><span class="meaning">Terror / great fear → terrors / great fears</span></div>
+<div class="word"><span class="elvish">Duin <span class="arrow">→</span> Duin*</span><span class="meaning">River → rivers</span></div>
+</div>
+<h3>Pairs that change</h3>
+<div class="word-list">
+<div class="word"><span class="elvish">Eirien <span class="arrow">→</span> Eirin</span><span class="meaning">Daisy → daisies</span></div>
+<div class="word"><span class="elvish">Feir <span class="arrow">→</span> Fîr</span><span class="meaning">Mortal → mortals</span></div>
+<div class="word"><span class="elvish">Iell <span class="arrow">→</span> Ill</span><span class="meaning">Daughter → daughters</span></div>
+<div class="word"><span class="elvish">Iest <span class="arrow">→</span> Ist</span><span class="meaning">Wish → wishes</span></div>
+<div class="word"><span class="elvish">Goeol <span class="arrow">→</span> Goeyl</span><span class="meaning">Dreadful / terrifying → plural form<small>OE stays unchanged; the final O changes.</small></span></div>
+<div class="word"><span class="elvish">Ion <span class="arrow">→</span> Yn</span><span class="meaning">Son → sons</span></div>
+<div class="word"><span class="elvish">Bior <span class="arrow">→</span> Byr</span><span class="meaning">Follower / vassal → followers / vassals</span></div>
+<div class="word"><span class="elvish">Cirion <span class="arrow">→</span> Ciryn</span><span class="meaning">Sailor → sailors</span></div>
+</div>
+<div class="aside-note">*The supplied page text leaves these plural forms blank. The unchanged forms here are supplied by applying the rules stated in its table.</div>
+</section>
+
+<section id="aw">
+<div class="heading"><span class="number">04</span><h2>The special case of AW</h2></div>
+<h3>One syllable: AW remains AW</h3>
+<p>In a single-syllable word, AW is pronounced identically to AU and is treated as a diphthong. Just as AU remains AU, <strong>AW remains AW</strong>.</p>
+<div class="word-list">
+<div class="word"><span class="elvish">Raw <span class="arrow">→</span> Raw*</span><span class="meaning">Lion → lions</span></div>
+<div class="word"><span class="elvish">Naw <span class="arrow">→</span> Naw*</span><span class="meaning">Idea → ideas</span></div>
+</div>
+<h3>More than one syllable: treat A separately</h3>
+<p>In longer words, AW is treated as two separate sounds. Pluralise the A according to the rules in <a href="https://sindarinlessons.weebly.com/6---plurals-1.html">Lesson 6</a>.</p>
+<div class="word-list">
+<div class="word"><span class="elvish">Awarth <span class="arrow">→</span> Ewerth</span><span class="meaning">Abandonment → abandonments</span></div>
+<div class="word"><span class="elvish">Tawar <span class="arrow">→</span> Tewair</span><span class="meaning">Material wood / a forest → some wood / forests</span></div>
+</div>
+<p class="meaning">*Unchanged plurals supplied from the source’s stated AW rule.</p>
+</section>
+
+<section id="irregular">
+<div class="heading"><span class="number">05</span><h2>Irregular plurals</h2></div>
+<p class="intro">Some plurals reflect how their words originally formed. Use this list as a reference rather than trying to derive every form from the regular rules.</p>
+<div class="table-wrap"><table class="irregular">
+<thead><tr><th scope="col">Singular</th><th scope="col">Plural</th><th scope="col">Meaning</th></tr></thead>
+<tbody>
+<tr><td>Ael</td><td>Aelin</td><td>Pool(s)</td></tr>
+<tr><td>Alph</td><td>Eilph</td><td>Swan(s)</td></tr>
+<tr><td>Cair</td><td>Cîr</td><td>Ship(s)</td></tr>
+<tr><td>Caun</td><td>Conin</td><td>Prince(s)</td></tr>
+<tr><td>Cef</td><td>Ceif</td><td>Soil(s)</td></tr>
+<tr><td>Doron</td><td>Deren</td><td>Oak tree(s)</td></tr>
+<tr><td>Drû</td><td>Drúin</td><td>Wose(s), Wild men</td></tr>
+<tr><td>Êl</td><td>Elin</td><td>Star(s)</td></tr>
+<tr><td>Fela</td><td>Fili</td><td>Cave(s)</td></tr>
+<tr><td>Fêr</td><td>Ferin</td><td>Beech tree(s)</td></tr>
+<tr><td>Iau</td><td>Iui</td><td>Corn</td></tr>
+<tr><td>Ôl</td><td>Elei</td><td>Dream(s)</td></tr>
+<tr><td>Orod</td><td>Ered</td><td>Mountain(s); also has the regular plural Eryd</td></tr>
+<tr><td>Pêl</td><td>Peli</td><td>Fenced field(s)</td></tr>
+<tr><td>Rodon</td><td>Rodyn</td><td>Vala(r)</td></tr>
+</tbody></table></div>
+<div class="aside-note"><strong>Watch the meaning.</strong> The homonyms <em>Caun</em> meaning “outcry” or “valour,” and <em>Iau</em> meaning “ravine,” have regular plurals. Do not apply the irregular forms for “prince” and “corn” to them.</div>
+</section>
+
+<section id="practice">
+<div class="heading"><span class="number">06</span><h2>Test your knowledge</h2></div>
+<p class="intro">An added exercise based on this lesson. Enter the plural forms; accents matter, but capitalisation does not.</p>
+<form id="quiz">
+<div class="quiz-row"><label for="q1">Iell<small>Daughter</small></label><input id="q1" autocomplete="off" spellcheck="false" data-answer="ill" aria-label="Plural of Iell"></div>
+<div class="quiz-row"><label for="q2">Cirion<small>Sailor</small></label><input id="q2" autocomplete="off" spellcheck="false" data-answer="ciryn" aria-label="Plural of Cirion"></div>
+<div class="quiz-row"><label for="q3">Tawar<small>Forest</small></label><input id="q3" autocomplete="off" spellcheck="false" data-answer="tewair" aria-label="Plural of Tawar"></div>
+<div class="quiz-row"><label for="q4">Cair<small>Ship</small></label><input id="q4" autocomplete="off" spellcheck="false" data-answer="cîr" aria-label="Plural of Cair"></div>
+<div class="quiz-row"><label for="q5">Caun<small>Prince</small></label><input id="q5" autocomplete="off" spellcheck="false" data-answer="conin" aria-label="Plural of Caun meaning prince"></div>
+<div class="quiz-row"><label for="q6">Êl<small>Star</small></label><input id="q6" autocomplete="off" spellcheck="false" data-answer="elin" aria-label="Plural of Êl"></div>
+<div class="quiz-actions"><button class="button primary" type="submit">Check answers</button><button class="button" id="show-answers" type="button" aria-expanded="false" aria-controls="answers">Show answers</button><button class="button" type="reset">Reset</button></div>
+<p class="result" id="result" role="status"></p>
+<div class="answers" id="answers" hidden>Iell → Ill · Cirion → Ciryn · Tawar → Tewair · Cair → Cîr · Caun → Conin · Êl → Elin</div>
+</form>
+</section>
+
+<section id="sources">
+<div class="heading"><h2>Continue your study</h2></div>
+<p class="intro">Adapted from Sindarin Hub’s “Lesson 7 — Plurals (part two).” Rules and examples follow the supplied page; inferred missing forms are marked. Interpretations may differ between Sindarin learning resources.</p>
+<p><a href="https://sindarinlessons.weebly.com/7---plurals-2.html" target="_blank" rel="noopener noreferrer">Read the original lesson ↗</a></p>
+<p><a href="https://sindarinlessons.weebly.com/6---plurals-1.html" target="_blank" rel="noopener noreferrer">Revisit Lesson 6: Plurals, part one ↗</a></p>
+</section>
+<div class="ending"><p>Every pattern has its own story.</p><a href="#top">Back to the beginning ↑</a></div>
+</article>
+</div>
+</main>
+<footer><span class="footer-brand">Sindarin Hub</span><span>A study companion for the language of the Grey Elves.</span><a href="#sources">Source & further reading</a></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+const quiz=document.getElementById('quiz');
+const result=document.getElementById('result');
+const answers=document.getElementById('answers');
+const answerButton=document.getElementById('show-answers');
+document.getElementById('toggle').addEventListener('click',function(){
+const hidden=document.getElementById('conversation').classList.toggle('hide-translations');
+this.textContent=hidden?'Show English':'Hide English';
+this.setAttribute('aria-pressed',String(!hidden));
+});
+quiz.addEventListener('submit',event=>{
+event.preventDefault();
+let correct=0;
+quiz.querySelectorAll('input').forEach(input=>{
+const valid=input.value.trim().normalize('NFC').toLowerCase()===input.dataset.answer;
+input.classList.toggle('correct',valid);
+input.classList.toggle('incorrect',!valid);
+input.setAttribute('aria-invalid',String(!valid));
+if(valid)correct++;
+});
+result.textContent=correct+' of 6 correct. '+(correct===6?'Excellent work!':'Review your answers and try again.');
+});
+answerButton.addEventListener('click',()=>{
+answers.hidden=!answers.hidden;
+answerButton.textContent=answers.hidden?'Show answers':'Hide answers';
+answerButton.setAttribute('aria-expanded',String(!answers.hidden));
+});
+quiz.addEventListener('reset',()=>{
+quiz.querySelectorAll('input').forEach(input=>{
+input.classList.remove('correct','incorrect');input.removeAttribute('aria-invalid');
+});
+result.textContent='';answers.hidden=true;
+answerButton.textContent='Show answers';answerButton.setAttribute('aria-expanded','false');
+});
+let toastTimer;
+document.getElementById('download').addEventListener('click',()=>{
+const clone=document.documentElement.cloneNode(true);
+clone.querySelector('#toast').hidden=true;clone.querySelector('#toast').textContent='';
+clone.querySelector('#conversation').classList.remove('hide-translations');
+clone.querySelector('#toggle').textContent='Hide English';clone.querySelector('#toggle').setAttribute('aria-pressed','true');
+clone.querySelectorAll('input').forEach(input=>{
+input.removeAttribute('value');input.classList.remove('correct','incorrect');input.removeAttribute('aria-invalid');
+});
+clone.querySelector('#result').textContent='';clone.querySelector('#answers').hidden=true;
+clone.querySelector('#show-answers').textContent='Show answers';clone.querySelector('#show-answers').setAttribute('aria-expanded','false');
+clone.querySelectorAll('.sidebar a').forEach(a=>{a.classList.remove('current');a.removeAttribute('aria-current');});
+clone.querySelector('.sidebar a').classList.add('current');
+const url=URL.createObjectURL(new Blob(['<!DOCTYPE html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}));
+const link=document.createElement('a');link.href=url;link.download='sindarin-plurals-part-two.html';
+document.body.appendChild(link);link.click();link.remove();
+setTimeout(()=>URL.revokeObjectURL(url),10000);
+const toast=document.getElementById('toast');toast.textContent='Your HTML download has started.';toast.hidden=false;
+clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.hidden=true,3500);
+});
+if('IntersectionObserver' in window){
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting)document.querySelectorAll('.sidebar a').forEach(a=>{
+const selected=a.getAttribute('href')==='#'+entry.target.id;
+a.classList.toggle('current',selected);
+if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
+});
+});
+},{rootMargin:'-5% 0px -65% 0px',threshold:0});
+document.querySelectorAll('article section[id]:not(#sources)').forEach(section=>observer.observe(section));
+}
+</script>
+</body>
+</html>
