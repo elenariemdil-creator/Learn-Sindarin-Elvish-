@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#213e35">
+<title>Lesson 4 · Questions — Sindarin Hub</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--paper:#f5f2e9;--ink:#263b34;--muted:#667269;--green:#213e35;--gold:#a58045;--line:#d8dbcf;--display:'Cormorant Garamond',Georgia,serif;--body:'DM Sans',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:35px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.8 var(--body)}a{color:inherit;text-underline-offset:4px}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:5px}::selection{background:#ded6b5}
+header{max-width:1360px;margin:auto;padding:28px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:25px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-size:15px;letter-spacing:2.5px;font-weight:600}.brand svg{width:31px;height:42px}nav{display:flex;gap:25px}nav a{text-decoration:none;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;position:relative}nav a:after{content:"";position:absolute;bottom:-8px;left:0;width:0;height:1px;background:var(--gold);transition:width .2s}nav a:hover:after,nav a.active:after{width:100%}.download{background:none;border:1px solid var(--line);padding:9px 15px;font-size:11px;transition:.2s}.download:hover{background:var(--green);color:var(--paper);border-color:var(--green)}button:active{transform:scale(.97)}
+.hero{max-width:1360px;margin:auto;display:grid;grid-template-columns:1.6fr 1fr;padding:65px 8% 60px;overflow:hidden}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:2.3px;color:var(--gold);font-weight:600}.hero h1{font-family:var(--display);font-size:clamp(65px,8vw,108px);font-weight:400;line-height:1;letter-spacing:-3px;margin:20px 0}.hero p{max-width:445px;color:var(--muted)}.meta{display:flex;gap:20px;margin-top:26px;font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:var(--muted)}.meta span+span{border-left:1px solid var(--line);padding-left:20px}.art{display:flex;align-items:center;justify-content:center;position:relative}.art svg{width:310px;height:310px;max-width:100%}.art-label{position:absolute;bottom:0;font-family:var(--display);font-style:italic;font-size:19px;color:var(--muted)}.banner{background:var(--green);color:#e4e8db;padding:17px 8%;display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.5px}.banner span:first-child{color:#d4bb86}
+.layout{max-width:1180px;margin:auto;padding:65px 35px 80px;display:grid;grid-template-columns:220px 1fr;gap:70px}.sidebar{position:sticky;top:35px;align-self:start}.sidebar h2{font:600 10px var(--body);letter-spacing:2px;margin:0 0 20px;color:var(--muted)}.sidebar ol{padding:0;list-style:none;margin:0}.sidebar li a{display:flex;gap:14px;text-decoration:none;font-size:12px;padding:10px 0 10px 15px;color:var(--muted);border-left:2px solid transparent;transition:.2s}.sidebar li a span{font-size:10px;color:var(--gold);padding-top:2px}.sidebar li a:hover,.sidebar li a.current{border-color:var(--gold);color:var(--green);background:#e9eadf}.sidebar .note{margin-top:35px;border-top:1px solid var(--line);padding-top:20px;font-family:var(--display);font-size:22px;line-height:1.4;color:var(--muted)}
+section{margin-bottom:55px}.section-heading{display:flex;align-items:center;gap:16px;margin-bottom:20px}.number{font-family:var(--display);font-size:21px;color:var(--gold)}h2{font-family:var(--display);font-size:38px;line-height:1.2;font-weight:500;margin:0}h3{font-family:var(--display);font-size:27px;font-weight:600;margin:28px 0 12px}p{margin:0 0 18px}.intro{color:var(--muted)}.aside-note{padding:18px 22px;border-left:2px solid var(--gold);background:#eaece1;font-size:13px;margin:24px 0}.aside-note p:last-child{margin-bottom:0}.elvish{font-family:var(--display);font-size:26px;font-weight:500;line-height:1.35}.meaning{font-size:13px;color:var(--muted)}
+.examples{border-top:1px solid var(--line);margin:24px 0}.example{display:grid;grid-template-columns:1.1fr 1fr;gap:25px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}.meaning small{display:block;font-size:11px;line-height:1.7;margin-top:5px}.examples.hide-translations .meaning{visibility:hidden}.section-tools{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:25px;border-bottom:1px solid var(--line);padding-bottom:18px}.section-tools p{font-size:11px;color:var(--muted);margin:0}.toggle{background:transparent;border:1px solid var(--line);color:var(--muted);font-size:10px;padding:7px 12px;transition:.2s;flex-shrink:0}.toggle:hover{border-color:var(--gold);color:var(--green)}
+.word-list{border-top:1px solid var(--line);margin:24px 0}.word{display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}.word small{display:block;font:11px/1.6 var(--body);color:var(--muted);margin-top:5px}.pattern{padding:20px 0;border-bottom:1px solid var(--line);margin-bottom:22px}.pattern .elvish{font-size:34px}.pattern .meaning{margin-left:20px}.ending{border-top:1px solid var(--line);padding:25px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}.ending p{margin:0;font-family:var(--display);font-size:25px}.ending a{font-size:10px;text-transform:uppercase;letter-spacing:1px;text-decoration:none;border-bottom:1px solid var(--gold)}
+footer{background:var(--green);padding:35px 8%;color:#c8d2c5;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:11px}footer .footer-brand{font-family:var(--display);font-size:25px;color:var(--paper)}.reveal{animation:rise .7s both}.hero-copy{animation-delay:.1s}.art{animation-delay:.25s}.layout{animation-delay:.35s}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:12px 22px;background:var(--green);color:white;border:1px solid #8c9b83;font-size:12px;z-index:10;box-shadow:0 4px 25px #0002}.toast[hidden]{display:none}
+@media(max-width:950px){header{flex-wrap:wrap}nav{order:3;width:100%;justify-content:space-between;gap:12px}.hero{padding:45px 6%}.art svg{width:230px}.layout{grid-template-columns:170px 1fr;gap:30px;padding:45px 5%}.example{gap:18px}}
+@media(max-width:600px){header{padding:20px 6%}.brand{font-size:12px;letter-spacing:1.5px}.download{font-size:10px;padding:8px 10px}nav{overflow:auto;gap:20px}nav a{font-size:9px}.hero{display:block;padding:40px 6%}.hero h1{font-size:72px;letter-spacing:-2px}.art{display:none}.banner{font-size:10px;padding:15px 6%;flex-direction:column;gap:3px}.layout{display:block;padding:30px 6%}.sidebar{position:static;margin-bottom:35px;border-bottom:1px solid var(--line);padding-bottom:20px}.sidebar ol{display:flex;overflow:auto;gap:16px}.sidebar li{flex:0 0 auto}.sidebar li a{padding:6px 0;border-left:0;border-bottom:2px solid transparent}.sidebar li a.current{border-bottom-color:var(--gold);background:none}.sidebar h2{margin-bottom:10px}.sidebar .note{display:none}h2{font-size:33px}section{margin-bottom:40px}.word{gap:15px}.elvish{font-size:24px}.example{grid-template-columns:1fr;gap:6px;padding:17px 0}.examples.hide-translations .meaning{display:none}.pattern .meaning{display:block;margin:8px 0 0}footer{flex-direction:column;align-items:flex-start}.ending p{font-size:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}*{transition:none!important}}
+@media print{nav,.download,.sidebar,.art,.banner,.ending,.toast,.section-tools{display:none}.layout{display:block;padding:20px}.hero{padding:20px}.hero h1{font-size:50px}body{background:white}.example,.word{break-inside:avoid}.examples.hide-translations .meaning{visibility:visible;display:block}footer{background:none;color:var(--ink)}}
+</style>
+</head>
+<body id="top">
+<header>
+<a class="brand" href="#top" aria-label="Sindarin Hub home">
+<svg viewBox="0 0 35 48" fill="none" aria-hidden="true"><path d="M17.5 44V6M17.5 30C3 28 2 14 4 6c9 3 14 9 13.5 24Zm0-10C30 18 32 8 30 2c-8 2-12 9-12.5 18Zm0 20C27 38 32 30 31 23c-8 1-12 7-13.5 17Z" stroke="currentColor" stroke-width="1.2"/></svg>
+SINDARIN HUB
+</a>
+<nav aria-label="Main navigation">
+<a href="https://sindarinlessons.weebly.com/">Home</a><a href="#vocabulary">Words</a><a href="#introduction">Verbs</a><a href="#what-who">Phrases</a><a class="active" href="#top">Lessons</a><a href="#sources">Resources</a>
+</nav>
+<button class="download" id="download" type="button">↓ Download HTML</button>
+</header>
+<main>
+<div class="hero">
+<div class="hero-copy reveal">
+<div class="eyebrow">The language of the Grey Elves</div>
+<h1>Questions</h1>
+<p>Curiosity opens the conversation. Learn to ask who, what, where, and why—and discover the words that help you understand a little more.</p>
+<div class="meta"><span>Lesson 04</span><span>First conversations</span><span>8 sections</span></div>
+</div>
+<div class="art reveal" aria-hidden="true">
+<svg viewBox="0 0 320 320" fill="none">
+<circle cx="160" cy="150" r="124" stroke="#b9bea8" stroke-width=".7"/>
+<circle cx="160" cy="150" r="112" stroke="#b9bea8" stroke-width=".5" stroke-dasharray="2 8"/>
+<path d="M160 54v192M64 150h192M92 82l136 136M92 218 228 82" stroke="#b9bea8" stroke-width=".7"/>
+<path d="m160 67 20 66 63 17-63 18-20 65-20-65-63-18 63-17 20-66Z" stroke="#71836a" stroke-width="1.2"/>
+<path d="m160 67 0 83 20-17m-20 17 83 0m-83 0 0 83-20-65m20-18-83 0" stroke="#a7af94"/>
+<circle cx="160" cy="150" r="8" fill="#a58045" fill-opacity=".2" stroke="#a58045"/>
+<path d="m155 24 5-8 5 8-5 8-5-8Zm0 252 5-8 5 8-5 8-5-8Z" fill="#a58045"/>
+</svg>
+<span class="art-label">Let curiosity be your compass</span>
+</div>
+</div>
+<div class="banner"><span>04 / THE ART OF ASKING</span><span>Who · What · Where · When · How · Why</span></div>
+<div class="layout reveal">
+<aside class="sidebar">
+<h2>IN THIS LESSON</h2>
+<ol>
+<li><a href="#what-who" class="current"><span>01</span>What? Who?</a></li>
+<li><a href="#where"><span>02</span>Where?</a></li>
+<li><a href="#when"><span>03</span>When?</a></li>
+<li><a href="#how"><span>04</span>How?</a></li>
+<li><a href="#why"><span>05</span>Why?</a></li>
+<li><a href="#purpose"><span>06</span>For what purpose?</a></li>
+<li><a href="#other"><span>07</span>Other questions</a></li>
+<li><a href="#vocabulary"><span>08</span>Vocabulary review</a></li>
+</ol>
+<div class="note">“A new question.<br>A wider world.”</div>
+</aside>
+<article aria-label="Lesson 4: Questions">
+<div id="introduction">
+<p class="intro">Basic interrogatives—the words for “who,” “what,” “why,” and so on—are useful building blocks for sentences. The verb endings and prepositions introduced here will be covered in detail in later lessons.</p>
+<div class="aside-note"><p>This lesson is covered in more detail in <strong>Week 7 of <em>Introduction to Sindarin</em></strong>.</p><p><strong>An important distinction:</strong> the source identifies <em>Man</em> as the only attested Sindarin interrogative. The other question words presented here are reconstructed.</p></div>
+</div>
+<div class="section-tools"><p>Practise reading the examples without their translations.</p><button class="toggle" id="translations" type="button" aria-pressed="true">Hide English</button></div>
+
+<section id="what-who">
+<div class="section-heading"><span class="number">01</span><h2>What? Who?</h2></div>
+<p>The word <strong>Man</strong> means both “what” and “who.” Context helps distinguish the two meanings.</p>
+<div class="examples">
+<div class="example"><span class="elvish">Man te?</span><span class="meaning">What is it? / Who is it?</span></div>
+<div class="example"><span class="elvish">Man sa?</span><span class="meaning">What is that? / Who is that?</span></div>
+<div class="example"><span class="elvish">Man e lû?</span><span class="meaning">What is the time?</span></div>
+<div class="example"><span class="elvish">Man sad?</span><span class="meaning">What place?<small>An alternative for “Where?”</small></span></div>
+<div class="example"><span class="elvish">Man agoreg?</span><span class="meaning">What did you do?</span></div>
+<div class="example"><span class="elvish">Man na e fen?</span><span class="meaning">Who is at the door?</span></div>
+</div>
+<div class="aside-note">To avoid ambiguity when asking “Who is it?”, the lesson offers <strong>Man pen?</strong>—“What person?”</div>
+</section>
+
+<section id="where">
+<div class="section-heading"><span class="number">02</span><h2>Where?</h2></div>
+<p class="intro">Choose the question according to whether you mean “in,” “at,” or “from” a place.</p>
+<div class="word-list">
+<div class="word"><span class="elvish">Mivan?</span><span class="meaning">In what place?</span></div>
+<div class="word"><span class="elvish">Navan?</span><span class="meaning">At what place?</span></div>
+<div class="word"><span class="elvish">Oman?</span><span class="meaning">From what place?</span></div>
+</div>
+<div class="examples">
+<div class="example"><span class="elvish">Mivan i degil nîn?</span><span class="meaning">Where is my pen?<small>In what place is my pen?</small></span></div>
+<div class="example"><span class="elvish">Navan agoreg?</span><span class="meaning">Where did you do that?<small>At what place did you do that?</small></span></div>
+<div class="example"><span class="elvish">Navan e mar?</span><span class="meaning">Where is the house?</span></div>
+<div class="example"><span class="elvish">Navan ci?</span><span class="meaning">Where are you?<small>When you are not within the same locale.</small></span></div>
+<div class="example"><span class="elvish">Mivan ci?</span><span class="meaning">Where are you?<small>When you are within the same locale or building.</small></span></div>
+<div class="example"><span class="elvish">Oman i ost tôl?</span><span class="meaning">Where is the city he is coming from?<small>The source glosses this as “From what place is the city he is coming?”</small></span></div>
+</div>
+<p>You have already met <strong>Navan</strong> in Lesson 3: <span class="elvish">Navan dorthog?</span>—“Where do you live?”</p>
+<div class="aside-note"><strong>Alternative:</strong> <em>Mas?</em> is another proposed word for “Where?”, reconstructed from Quenya.</div>
+</section>
+
+<section id="when">
+<div class="section-heading"><span class="number">03</span><h2>When?</h2></div>
+<div class="pattern"><span class="elvish">Mallú?</span><span class="meaning">When?</span></div>
+<div class="examples">
+<div class="example"><span class="elvish">Mallú agoreg?</span><span class="meaning">When did you do that?</span></div>
+<div class="example"><span class="elvish">Mallú ci onnen?</span><span class="meaning">When were you born?</span></div>
+<div class="example"><span class="elvish">Mallú iavas?</span><span class="meaning">When is autumn?</span></div>
+<div class="example"><span class="elvish">Mallú telithar?</span><span class="meaning">When will they come?</span></div>
+</div>
+<div class="aside-note"><strong>Alternatives:</strong> <em>Na van lû?</em> means “At what time?” The source also lists <em>Mar?</em>, a proposed “When?” reconstructed from Quenya.</div>
+</section>
+
+<section id="how">
+<div class="section-heading"><span class="number">04</span><h2>How?</h2></div>
+<div class="pattern"><span class="elvish">Manen?</span><span class="meaning">How?</span></div>
+<div class="examples">
+<div class="example"><span class="elvish">Manen agoreg?</span><span class="meaning">How did you do that?</span></div>
+<div class="example"><span class="elvish">Manen istog?</span><span class="meaning">How do you know?</span></div>
+<div class="example"><span class="elvish">Manen ven hirnig?</span><span class="meaning">How did you find us?</span></div>
+</div>
+<div class="aside-note"><strong>Alternative:</strong> <em>Naman?</em>—“How?”, literally “With what?”</div>
+</section>
+
+<section id="why">
+<div class="section-heading"><span class="number">05</span><h2>Why?</h2></div>
+<div class="pattern"><span class="elvish">Amman?</span><span class="meaning">Why?</span></div>
+<div class="examples">
+<div class="example"><span class="elvish">Amman níniol?</span><span class="meaning">Why are you crying?</span></div>
+<div class="example"><span class="elvish">Amman agoreg?</span><span class="meaning">Why did you do that?</span></div>
+<div class="example"><span class="elvish">Amman en ell luin?</span><span class="meaning">Why is the sky blue?</span></div>
+<div class="example"><span class="elvish">Amman gelia Edhellen?</span><span class="meaning">Why is he studying Elvish?</span></div>
+</div>
+</section>
+
+<section id="purpose">
+<div class="section-heading"><span class="number">06</span><h2>For what purpose?</h2></div>
+<p class="intro">To ask specifically about purpose, the lesson uses <strong>Amman theled</strong> rather than the more general “Why?”</p>
+<div class="examples">
+<div class="example"><span class="elvish">Amman theled agoreg?</span><span class="meaning">Why did you do that?<small>For what purpose did you do that?</small></span></div>
+<div class="example"><span class="elvish">Amman theled anírog istol?</span><span class="meaning">Why do you want to know?<small>For what purpose do you want to know?</small></span></div>
+</div>
+</section>
+
+<section id="other">
+<div class="section-heading"><span class="number">07</span><h2>Other questions</h2></div>
+<p>Combine question words with prepositions to ask more specific questions.</p>
+<div class="word-list">
+<div class="word"><span class="elvish">O van?</span><span class="meaning">From what? / About what?</span></div>
+<div class="word"><span class="elvish">Be van?</span><span class="meaning">According to whom?</span></div>
+</div>
+<p class="intro">The original lesson points ahead to <strong>Lesson 13</strong> for more prepositions you can use to form questions.</p>
+</section>
+
+<section id="vocabulary">
+<div class="section-heading"><span class="number">08</span><h2>Vocabulary review</h2></div>
+<p class="intro">A quick reference compiled from the question words introduced above.</p>
+<div class="word-list">
+<div class="word"><span class="elvish">Man</span><span class="meaning">What? / Who?<small>Attested, according to the source lesson.</small></span></div>
+<div class="word"><span class="elvish">Mivan / Navan / Oman</span><span class="meaning">In / at / from what place?</span></div>
+<div class="word"><span class="elvish">Mallú</span><span class="meaning">When?</span></div>
+<div class="word"><span class="elvish">Manen</span><span class="meaning">How?</span></div>
+<div class="word"><span class="elvish">Amman</span><span class="meaning">Why?</span></div>
+<div class="word"><span class="elvish">Amman theled</span><span class="meaning">For what purpose?</span></div>
+</div>
+<div class="aside-note"><strong>Try it yourself.</strong> Read <em>Man agoreg?</em>, <em>Navan agoreg?</em>, <em>Mallú agoreg?</em>, and <em>Manen agoreg?</em> Notice how changing only the question word changes what you are asking.</div>
+</section>
+
+<section id="sources">
+<div class="section-heading"><h2>Continue your study</h2></div>
+<p class="intro">Adapted from Sindarin Hub’s “Lesson 4 — Questions.” Phrases and interpretations follow the supplied source, including its reconstructed interrogatives. Other Sindarin resources may use different reconstructions.</p>
+<p><a href="https://sindarinlessons.weebly.com/4---questions.html" target="_blank" rel="noopener noreferrer">Read the original lesson ↗</a></p>
+<p><a href="https://sindarinlessons.weebly.com/3---origins.html" target="_blank" rel="noopener noreferrer">Revisit Lesson 3: Origins ↗</a></p>
+</section>
+<div class="ending"><p>There is always more to ask.</p><a href="#top">Back to the beginning ↑</a></div>
+</article>
+</div>
+</main>
+<footer><span class="footer-brand">Sindarin Hub</span><span>A study companion for the language of the Grey Elves.</span><a href="#sources">Source & further reading</a></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+const translationButton=document.getElementById('translations');
+translationButton.addEventListener('click',()=>{
+const hide=translationButton.getAttribute('aria-pressed')==='true';
+document.querySelectorAll('.examples').forEach(el=>el.classList.toggle('hide-translations',hide));
+translationButton.textContent=hide?'Show English':'Hide English';
+translationButton.setAttribute('aria-pressed',String(!hide));
+});
+let toastTimer;
+document.getElementById('download').addEventListener('click',()=>{
+const clone=document.documentElement.cloneNode(true);
+const clonedToast=clone.querySelector('#toast');
+clonedToast.hidden=true;clonedToast.textContent='';
+clone.querySelectorAll('.examples').forEach(el=>el.classList.remove('hide-translations'));
+const toggle=clone.querySelector('#translations');
+toggle.textContent='Hide English';toggle.setAttribute('aria-pressed','true');
+clone.querySelectorAll('.sidebar a').forEach(a=>{
+a.classList.remove('current');a.removeAttribute('aria-current');
+});
+clone.querySelector('.sidebar a').classList.add('current');
+const blob=new Blob(['<!DOCTYPE html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});
+const url=URL.createObjectURL(blob);
+const link=document.createElement('a');
+link.href=url;link.download='sindarin-questions.html';
+document.body.appendChild(link);link.click();link.remove();
+setTimeout(()=>URL.revokeObjectURL(url),10000);
+const toast=document.getElementById('toast');
+toast.textContent='Your HTML download has started.';toast.hidden=false;
+clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.hidden=true,3500);
+});
+if('IntersectionObserver' in window){
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+document.querySelectorAll('.sidebar a').forEach(a=>{
+const selected=a.getAttribute('href')==='#'+entry.target.id;
+a.classList.toggle('current',selected);
+if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
+});
+}
+});
+},{rootMargin:'-5% 0px -65% 0px',threshold:0});
+document.querySelectorAll('article section[id]:not(#sources)').forEach(section=>observer.observe(section));
+}
+</script>
+</body>
+</html>
